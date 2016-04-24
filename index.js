@@ -89,7 +89,7 @@ function animate() {
 	}
 	//碩博士獎項
 	if (count == 11){
-		document.getElementById('content').children[0].innerHTML = "恭賀 本系同學榮獲 2015碩博士最佳論文獎佳作";
+		document.getElementById('content').children[0].innerHTML = "恭賀同學榮獲 2015碩博士最佳論文獎佳作";
 		document.getElementById('content').children[1].innerHTML = "感謝指導教授用心良苦！";
 	}
 	//[大學部]公告 開設課程
