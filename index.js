@@ -20,7 +20,7 @@ function animate() {
 		});
 	}
 
-	let fade_direction = count%4 ;
+	var fade_direction = count%4 ;
 	switch (fade_direction) {
 		case 0 :
 			$('#content').animo({animation: "fadeInDown", duration: 0.5});
