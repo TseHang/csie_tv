@@ -1,4 +1,4 @@
-var timeFlag = window.setInterval(animate , 8500)
+var timeFlag = window.setInterval(animate , 9000)
 var count = 1 ;
 
 function animate() {
