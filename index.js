@@ -1,16 +1,17 @@
-var timeFlag = window.setInterval(animate , 6000)
+var timeFlag = window.setInterval(animate , 8500)
 var count = 1 ;
 
 function animate() {
 	count++;
-	console.log("111");
-	if ( count > 12 )
+	//console.log("111");
+	if ( count > 13 )
 		count = 1 ;
 
-
+	//'background-size':'cover',
 	$('#container').css({
 		'background-image':'url(\'images/'+count+'.jpg\')',
 		'background-size':'auto 100%',
+		
 	})
 	
 	//因為部課 蓋到系會 會不清楚 所以調大小
@@ -20,6 +21,7 @@ function animate() {
 		});
 	}
 
+	
 	var fade_direction = count%4 ;
 	switch (fade_direction) {
 		case 0 :
@@ -96,5 +98,10 @@ function animate() {
 	if (count == 12){
 		document.getElementById('content').children[0].innerHTML = "[大學部] 上下學期開設課程表 已公告";
 		document.getElementById('content').children[1].innerHTML = "相關資訊請至系網查閱。";
+	}
+	//[大學部]公告 預研生
+	if (count == 13){
+		document.getElementById('content').children[0].innerHTML = "[大學部] 預研生申請公告 5/2~5/15";
+		document.getElementById('content').children[1].innerHTML = "申請資格：大三 相關資訊請至系網查閱。";
 	}
 }

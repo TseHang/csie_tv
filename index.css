@@ -61,3 +61,15 @@ body {
 	font-size: 1.2em;
 	letter-spacing: 4px;
 }
+
+
+@media screen and (max-width: 1200px) {
+	.contentWrapper .content {
+		left:50px;
+	}
+
+	.contentWrapper .footer h1 {
+		bottom: 4px;
+	}
+
+}
