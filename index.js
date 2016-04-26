@@ -87,7 +87,7 @@ function animate() {
 	//64級獎學金
 	if (count == 10){
 		document.getElementById('content').children[0].innerHTML = "104下學期 64級獎學金得獎公告";
-		document.getElementById('content').children[1].innerHTML = "請於5/27中午12:10分 至4210領獎。";
+		document.getElementById('content').children[1].innerHTML = "請於5/17中午12:10分 至4210領獎。";
 	}
 	//碩博士獎項
 	if (count == 11){
