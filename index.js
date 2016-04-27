@@ -3,8 +3,6 @@
 內容只能放到 高度從上面往下數80%（因為要留20％的空間放bar)
 */
 
-
-
 var timeFlag = window.setInterval(animate , 9000)
 var count = 1 ;
 
@@ -76,7 +74,7 @@ function animate() {
 	//五月部課
 	if (count == 8){
 		document.getElementById('content').children[0].innerHTML = "[系會部課] 我想當正副會長 @ 5/5 19:00";
-		document.getElementById('content').children[1].innerHTML = "主講人：18屆系學會 正、副會長  李東霖 雷 承勳 ";
+		document.getElementById('content').children[1].innerHTML = "主講人：18屆系學會 正、副會長  李東霖 雷承勳 ";
 	}
 	//會長選舉
 	if (count == 9){
