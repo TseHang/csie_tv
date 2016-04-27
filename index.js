@@ -10,16 +10,16 @@ function animate() {
 	//'background-size':'cover',
 	$('#container').css({
 		'background-image':'url(\'images/'+count+'.jpg\')',
-		'background-size':'auto 100%',
-		
+		'background-size':'cover',
 	})
 	
-	//因為部課 蓋到系會 會不清楚 所以調大小
-	if (count == 7 || count == 8 || count == 9){
+	//因為選舉 蓋到系會 會不清楚 所以調大小
+	if (count == 9){
 		$('#container').css({
 			'background-size':'auto 84%',
 		});
 	}
+	
 
 	
 	var fade_direction = count%4 ;
@@ -71,13 +71,13 @@ function animate() {
 	}
 	//四月部課
 	if (count == 7){
-		document.getElementById('content').children[0].innerHTML = "18屆系學會最新部課 天黑黑 @ 4/29";
-		document.getElementById('content').children[1].innerHTML = "主講人：2015資訊周總籌 鞠之浩 張文瑋 ";
+		document.getElementById('content').children[0].innerHTML = "[系會部課] 資訊系課程概況 @ 5/3 19:00";
+		document.getElementById('content').children[1].innerHTML = "主講人：18屆系學會 學術部長 張友誠 ";
 	}
 	//五月部課
 	if (count == 8){
-		document.getElementById('content').children[0].innerHTML = "18屆系學會五月份部課 預告";
-		document.getElementById('content').children[1].innerHTML = "好期待 >////< ";
+		document.getElementById('content').children[0].innerHTML = "[系會部課] 我想當正副會長 @ 5/5 19:00";
+		document.getElementById('content').children[1].innerHTML = "主講人：18屆系學會 正、副會長  李東霖 雷 承勳 ";
 	}
 	//會長選舉
 	if (count == 9){
