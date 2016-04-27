@@ -1,3 +1,10 @@
+/*
+照片格式:1024x768
+內容只能放到 高度從上面往下數80%（因為要留20％的空間放bar)
+*/
+
+
+
 var timeFlag = window.setInterval(animate , 9000)
 var count = 1 ;
 
@@ -10,17 +17,9 @@ function animate() {
 	//'background-size':'cover',
 	$('#container').css({
 		'background-image':'url(\'images/'+count+'.jpg\')',
-		'background-size':'cover',
 	})
 	
 	//因為選舉 蓋到系會 會不清楚 所以調大小
-	if (count == 9){
-		$('#container').css({
-			'background-size':'auto 84%',
-		});
-	}
-	
-
 	
 	var fade_direction = count%4 ;
 	switch (fade_direction) {
