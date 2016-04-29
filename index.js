@@ -58,7 +58,7 @@ function animate() {
 	}
 	//送舊
 	if (count == 5){
-		document.getElementById('content').children[0].innerHTML = "2016 送舊晚會 六月三日 @ 系館前廣場";
+		document.getElementById('content').children[0].innerHTML = "2016 送舊晚會 六月三日";
 		document.getElementById('content').children[1].innerHTML = "等你來挑戰！！";
 	}
 	//小畢典
