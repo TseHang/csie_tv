@@ -26,16 +26,17 @@ var images = [
 ];
 
 $.preload(images, 1, function(last){
+  
   if (last){
     console.log("All loaded");
-    //window.sleep(2000);
+
+    //Preloading Out
     $('body').removeClass("loading");
+    var timeFlag = window.setInterval(animate , 9000); //animate Started
   }
 });
 
 //Preloading Out
-
-var timeFlag = window.setInterval(animate , 2000)
 var count = 1 ;
 
 function animate() {
