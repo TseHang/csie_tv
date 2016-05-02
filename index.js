@@ -3,13 +3,45 @@
 內容只能放到 高度從上面往下數80%（因為要留20％的空間放bar)
 */
 
-var timeFlag = window.setInterval(animate , 9000)
+//Loading
+$('body').addClass("loading");
+
+//Preloading
+var images = [
+  'images/1.jpg',
+  'images/2.jpg',
+  'images/3.jpg',
+  'images/4.jpg',
+  'images/5.jpg',
+  'images/6.jpg',
+  'images/7.jpg',
+  'images/8.jpg',
+  'images/9.jpg',
+  'images/10.jpg',
+  'images/11.jpg',
+  'images/12.jpg',
+  'images/13.jpg',
+  'images/14.jpg',
+
+];
+
+$.preload(images, 1, function(last){
+  if (last){
+    console.log("All loaded");
+    //window.sleep(2000);
+    $('body').removeClass("loading");
+  }
+});
+
+//Preloading Out
+
+var timeFlag = window.setInterval(animate , 2000)
 var count = 1 ;
 
 function animate() {
 	count++;
 	//console.log("111");
-	if ( count > 13 )
+	if ( count > 14 )
 		count = 1 ;
 
 	//'background-size':'cover',
@@ -78,26 +110,31 @@ function animate() {
 	}
 	//會長選舉
 	if (count == 9){
+		document.getElementById('content').children[0].innerHTML = "[系會部課] 天黑黑 @ 5/9 21:30";
+		document.getElementById('content').children[1].innerHTML = "主講人：2015 資訊周總籌 鞠之浩 張文瑋 昨日、今日、明日";
+	}
+	//會長選舉
+	if (count == 10){
 		document.getElementById('content').children[0].innerHTML = "19屆系學會 正、副會長選舉公告";
 		document.getElementById('content').children[1].innerHTML = "5/2~5/15 參選登記！為系上付出，人人有責。";
 	}
 	//64級獎學金
-	if (count == 10){
+	if (count == 11){
 		document.getElementById('content').children[0].innerHTML = "104下學期 64級獎學金得獎公告";
 		document.getElementById('content').children[1].innerHTML = "請於5/17中午12:10分 至4210領獎。";
 	}
 	//碩博士獎項
-	if (count == 11){
+	if (count == 12){
 		document.getElementById('content').children[0].innerHTML = "恭賀同學榮獲 2015碩博士最佳論文獎佳作";
 		document.getElementById('content').children[1].innerHTML = "感謝指導教授用心良苦！";
 	}
 	//[大學部]公告 開設課程
-	if (count == 12){
+	if (count == 13){
 		document.getElementById('content').children[0].innerHTML = "[大學部] 上下學期開設課程表 已公告";
 		document.getElementById('content').children[1].innerHTML = "相關資訊請至系網查閱。";
 	}
 	//[大學部]公告 預研生
-	if (count == 13){
+	if (count == 14){
 		document.getElementById('content').children[0].innerHTML = "[大學部] 預研生申請公告 5/2~5/15";
 		document.getElementById('content').children[1].innerHTML = "申請資格：大三 相關資訊請至系網查閱。";
 	}
