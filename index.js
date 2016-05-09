@@ -21,7 +21,6 @@ var images = [
   'images/11.jpg',
   'images/12.jpg',
   'images/13.jpg',
-  'images/14.jpg',
 ];
 
 $.preload(images, 1, function(last){
