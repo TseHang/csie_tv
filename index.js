@@ -22,7 +22,6 @@ var images = [
   'images/12.jpg',
   'images/13.jpg',
   'images/14.jpg',
-
 ];
 
 $.preload(images, 1, function(last){
@@ -42,7 +41,7 @@ var count = 1 ;
 function animate() {
 	count++;
 	//console.log("111");
-	if ( count > 14 )
+	if ( count > 13 )
 		count = 1 ;
 
 	//'background-size':'cover',
@@ -68,56 +67,56 @@ function animate() {
 			break;
 
 	}
+	//系女排
+	if (count == 1){
+		document.getElementById('content').children[0].innerHTML = "資訊女排，熱血拿牌";
+		document.getElementById('content').children[1].innerHTML = "2016 春季成功盃冠軍 用生命在打排球";
+	}
 
 	//系男籃
-	if (count == 1){
+	if (count == 2){
 		document.getElementById('content').children[0].innerHTML = "資訊男籃，陽光宅男";
 		document.getElementById('content').children[1].innerHTML = "最帥，沒有之一";
 	}
 	//系棒
-	if (count == 2){
+	if (count == 3){
 		document.getElementById('content').children[0].innerHTML = "2015 南資盃 壘球團體賽 殿軍";
-		document.getElementById('content').children[1].innerHTML = "練球時間：每週三、五 15:00~18:00 自強球場";
+		document.getElementById('content').children[1].innerHTML = "[系棒] 練球時間：每週三、五 15:00~18:00 自強球場";
 	}
 	//系排
-	if (count == 3){
-		document.getElementById('content').children[0].innerHTML = "2016 成大工院盃 男子排球賽 季軍";
-		document.getElementById('content').children[1].innerHTML = "練球時間：每週二、五 18:00 光復球場";
-	}
-	//小畢典
 	if (count == 4){
+		document.getElementById('content').children[0].innerHTML = "2016 成大工院盃 男子排球賽 季軍";
+		document.getElementById('content').children[1].innerHTML = "[男排] 練球時間：每週二、五 18:00 光復球場";
+	}
+	//女籃
+	if (count == 5){
 		document.getElementById('content').children[0].innerHTML = "2016 資訊女籃 成大工院盃 亞軍";
 		document.getElementById('content').children[1].innerHTML = "恭賀 兼具力與美的美女們奪得亞軍！";
 	}
 	//送舊
-	if (count == 5){
+	if (count == 6){
 		document.getElementById('content').children[0].innerHTML = "2016 送舊晚會 六月三日";
 		document.getElementById('content').children[1].innerHTML = "等你來挑戰！！";
 	}
 	//小畢典
-	if (count == 6){
+	if (count == 7){
 		document.getElementById('content').children[0].innerHTML = "2016 資訊系畢業典禮 六月五日 @ 大格致廳";
 		document.getElementById('content').children[1].innerHTML = "祝賀 學長姐鵬程萬里 一帆風順！";
 	}
-	//四月部課
-	if (count == 7){
-		document.getElementById('content').children[0].innerHTML = "[系會部課] 資訊系課程概況 @ 5/3 19:00";
-		document.getElementById('content').children[1].innerHTML = "主講人：18屆系學會 學術部長 張友誠 ";
-	}
-	//五月部課
+	//攝影部課
 	if (count == 8){
-		document.getElementById('content').children[0].innerHTML = "[系會部課] 我想當正副會長 @ 5/5 19:00";
-		document.getElementById('content').children[1].innerHTML = "主講人：18屆系學會 正、副會長  李東霖 雷承勳 ";
+		document.getElementById('content').children[0].innerHTML = "[系會部課] 攝影簡介 @4202 5/12 19:00";
+		document.getElementById('content').children[1].innerHTML = "主講人：王康霖 < 從0到100，雙手不搖擺 >";
 	}
 	//會長選舉
 	if (count == 9){
-		document.getElementById('content').children[0].innerHTML = "[系會部課] 天黑黑 @ 5/9 21:30";
-		document.getElementById('content').children[1].innerHTML = "主講人：2015 資訊周總籌 鞠之浩 張文瑋 昨日、今日、明日";
-	}
-	//會長選舉
-	if (count == 10){
 		document.getElementById('content').children[0].innerHTML = "19屆系學會 正、副會長選舉公告";
 		document.getElementById('content').children[1].innerHTML = "5/2~5/15 參選登記！為系上付出，人人有責。";
+	}
+	//[大學部]公告 預研生
+	if (count == 10){
+		document.getElementById('content').children[0].innerHTML = "[大學部] 預研生申請公告 5/2~5/15";
+		document.getElementById('content').children[1].innerHTML = "申請資格：大三 相關資訊請至系網查閱。";
 	}
 	//64級獎學金
 	if (count == 11){
@@ -131,12 +130,7 @@ function animate() {
 	}
 	//[大學部]公告 開設課程
 	if (count == 13){
-		document.getElementById('content').children[0].innerHTML = "[大學部] 上下學期開設課程表 已公告";
-		document.getElementById('content').children[1].innerHTML = "相關資訊請至系網查閱。";
-	}
-	//[大學部]公告 預研生
-	if (count == 14){
-		document.getElementById('content').children[0].innerHTML = "[大學部] 預研生申請公告 5/2~5/15";
-		document.getElementById('content').children[1].innerHTML = "申請資格：大三 相關資訊請至系網查閱。";
+		document.getElementById('content').children[0].innerHTML = "[演講資訊] 巨量資料分析技術與應用 @4263";
+		document.getElementById('content').children[1].innerHTML = "5/13（五）主講人：工研院 巨資中心 林軒毅";
 	}
 }
