@@ -26,13 +26,17 @@ var images = [
 ];
 
 $.preload(images, 1, function(last){
+
+	if ($(this)[0] == 'images/10.jpg'){
+		console.log('開始動畫囉');
+
+		//Preloading Out
+    $('body').removeClass("loading");
+    var timeFlag = window.setInterval(animate , 9000); //animate Started
+	}
   
   if (last){
     console.log("All loaded");
-
-    //Preloading Out
-    $('body').removeClass("loading");
-    var timeFlag = window.setInterval(animate , 9000); //animate Started
   }
 });
 
