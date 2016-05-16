@@ -28,11 +28,12 @@ var images = [
 $.preload(images, 1, function(last){
 
 	if ($(this)[0] == 'images/10.jpg'){
-		console.log('開始動畫囉');
+		console.log('開始動畫囉!!');
+		console.log('開始動畫囉!!');
 
 		//Preloading Out
     $('body').removeClass("loading");
-    var timeFlag = window.setInterval(animate , 9000); //animate Started
+    var timeFlag = window.setInterval(animate , 10000); //animate Started
 	}
   
   if (last){
