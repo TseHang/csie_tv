@@ -21,6 +21,8 @@ var images = [
   'images/11.jpg',
   'images/12.jpg',
   'images/13.jpg',
+  'images/14.jpg',
+  'images/15.jpg',
 ];
 
 $.preload(images, 1, function(last){
@@ -40,7 +42,7 @@ var count = 1 ;
 function animate() {
 	count++;
 	//console.log("111");
-	if ( count > 13 )
+	if ( count > 15 )
 		count = 1 ;
 
 	//'background-size':'cover',
@@ -102,34 +104,42 @@ function animate() {
 		document.getElementById('content').children[0].innerHTML = "2016 資訊系畢業典禮 六月五日 @ 大格致廳";
 		document.getElementById('content').children[1].innerHTML = "祝賀 學長姐鵬程萬里 一帆風順！";
 	}
-	//攝影部課
+	//選舉系列
 	if (count == 8){
-		document.getElementById('content').children[0].innerHTML = "[系會部課] 攝影簡介 @4202 5/12 19:00";
-		document.getElementById('content').children[1].innerHTML = "主講人：王康霖 < 從0到100，雙手不搖擺 >";
+		document.getElementById('content').children[0].innerHTML = "[選舉公告] 第19屆系學會正副會長 1號候選人";
+		document.getElementById('content').children[1].innerHTML = "5/18 12:00選舉發表會，5/19、20 11:00~17:10 進行投票";
 	}
 	//會長選舉
 	if (count == 9){
-		document.getElementById('content').children[0].innerHTML = "19屆系學會 正、副會長選舉公告";
-		document.getElementById('content').children[1].innerHTML = "5/2~5/15 參選登記！為系上付出，人人有責。";
+		document.getElementById('content').children[0].innerHTML = "[選舉公告] 政見 - 1號候選人";
+		document.getElementById('content').children[1].innerHTML = "5/18（三）12:00 @4263 政見發表會";
 	}
-	//[大學部]公告 預研生
+	//
 	if (count == 10){
-		document.getElementById('content').children[0].innerHTML = "[大學部] 預研生申請公告 5/2~5/15";
-		document.getElementById('content').children[1].innerHTML = "申請資格：大三 相關資訊請至系網查閱。";
+		document.getElementById('content').children[0].innerHTML = "[選舉公告] 投票 - 不要忘記你應有的權利";
+		document.getElementById('content').children[1].innerHTML = "5/19（四）、5/20（五）11:00 ~ 17:10 @舊系館中廊";
 	}
-	//64級獎學金
+	//
 	if (count == 11){
-		document.getElementById('content').children[0].innerHTML = "104下學期 64級獎學金得獎公告";
-		document.getElementById('content').children[1].innerHTML = "請於5/17中午12:10分 至4210領獎。";
+		document.getElementById('content').children[0].innerHTML = "[學生會長選舉公告] 5/17 ~ 5/19 線上投票";
+		document.getElementById('content').children[1].innerHTML = "5/17 ~ 5/19 線上投票";
 	}
-	//碩博士獎項
+	//
 	if (count == 12){
-		document.getElementById('content').children[0].innerHTML = "恭賀同學榮獲 2015碩博士最佳論文獎佳作";
-		document.getElementById('content').children[1].innerHTML = "感謝指導教授用心良苦！";
+		document.getElementById('content').children[0].innerHTML = "別從別人的嘴裡，去認識你自己";
+		document.getElementById('content').children[1].innerHTML = "圖片來源：毛叢叢 紛絲專頁";
 	}
-	//[大學部]公告 開設課程
+	//
 	if (count == 13){
-		document.getElementById('content').children[0].innerHTML = "[演講資訊] 巨量資料分析技術與應用 @4263";
-		document.getElementById('content').children[1].innerHTML = "5/13（五）主講人：工研院 巨資中心 林軒毅";
+		document.getElementById('content').children[0].innerHTML = "大家讀書加油！ 大一微積分期中考加油！";
+		document.getElementById('content').children[1].innerHTML = "圖片來源：毛叢叢紛絲專頁";
+	}
+	if (count == 14){
+		document.getElementById('content').children[0].innerHTML = "[演講資訊] 5/20（五）科技翻轉世界 @4263";
+		document.getElementById('content').children[1].innerHTML = "主講人：華致資訊 營運長 陳志男先生";
+	}
+	if (count == 15){
+		document.getElementById('content').children[0].innerHTML = "[得獎資訊] 恭賀本系師生共同傑出的努力";
+		document.getElementById('content').children[1].innerHTML = "～～～太強啦～～～";
 	}
 }
