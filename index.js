@@ -21,19 +21,17 @@ var images = [
   'images/11.jpg',
   'images/12.jpg',
   'images/13.jpg',
-  'images/14.jpg',
-  'images/15.jpg',
 ];
 
 $.preload(images, 1, function(last){
 
 	if ($(this)[0] == 'images/10.jpg'){
-		console.log('開始動畫囉!!');
+		console.log('start!!');
 		console.log('開始動畫囉!!');
 
 		//Preloading Out
     $('body').removeClass("loading");
-    var timeFlag = window.setInterval(animate , 10000); //animate Started
+    var timeFlag = window.setInterval(animate , 9000); //animate Started
 	}
   
   if (last){
@@ -47,7 +45,7 @@ var count = 1 ;
 function animate() {
 	count++;
 	//console.log("111");
-	if ( count > 15 )
+	if ( count > 13 )
 		count = 1 ;
 
 	//'background-size':'cover',
@@ -101,7 +99,7 @@ function animate() {
 	}
 	//送舊
 	if (count == 6){
-		document.getElementById('content').children[0].innerHTML = "2016 送舊晚會 六月三日";
+		document.getElementById('content').children[0].innerHTML = "2016 送舊晚會 六月三日 @ 濃園滿漢餐廳";
 		document.getElementById('content').children[1].innerHTML = "等你來挑戰！！";
 	}
 	//小畢典
@@ -111,23 +109,23 @@ function animate() {
 	}
 	//選舉系列
 	if (count == 8){
-		document.getElementById('content').children[0].innerHTML = "[選舉公告] 第19屆系學會正副會長 1號候選人";
-		document.getElementById('content').children[1].innerHTML = "5/18 12:00選舉發表會，5/19、20 11:00~17:10 進行投票";
+		document.getElementById('content').children[0].innerHTML = "[恭賀] 第19屆系學會正副會長 張哲/許雁婷";
+		document.getElementById('content').children[1].innerHTML = "期許他們將來的一年可以攜手打造更美好的資訊系";
 	}
 	//會長選舉
 	if (count == 9){
-		document.getElementById('content').children[0].innerHTML = "[選舉公告] 政見 - 1號候選人";
-		document.getElementById('content').children[1].innerHTML = "5/18（三）12:00 @4263 政見發表會";
+		document.getElementById('content').children[0].innerHTML = "[恭賀] 同仁榮任行政院科技會報 執行秘書";
+		document.getElementById('content').children[1].innerHTML = "資訊系全體同仁恭賀～";
 	}
 	//
 	if (count == 10){
-		document.getElementById('content').children[0].innerHTML = "[選舉公告] 投票 - 不要忘記你應有的權利";
-		document.getElementById('content').children[1].innerHTML = "5/19（四）、5/20（五）11:00 ~ 17:10 @舊系館中廊";
+		document.getElementById('content').children[0].innerHTML = "[演講資訊] 5/27（五） @4263";
+		document.getElementById('content').children[1].innerHTML = "Topic: New Systems Research Opportunities for Cloud-Scale Data Centers";
 	}
 	//
 	if (count == 11){
-		document.getElementById('content').children[0].innerHTML = "[學生會長選舉公告] 5/17 ~ 5/19 線上投票";
-		document.getElementById('content').children[1].innerHTML = "5/17 ~ 5/19 線上投票";
+		document.getElementById('content').children[0].innerHTML = "[演講資訊] 5/27（五） @4204";
+		document.getElementById('content').children[1].innerHTML = "主題：中醫脈診現代探討";
 	}
 	//
 	if (count == 12){
@@ -136,15 +134,7 @@ function animate() {
 	}
 	//
 	if (count == 13){
-		document.getElementById('content').children[0].innerHTML = "大家讀書加油！ 大一微積分期中考加油！";
+		document.getElementById('content').children[0].innerHTML = "大家讀書加油！ 期末考加油！";
 		document.getElementById('content').children[1].innerHTML = "圖片來源：毛叢叢紛絲專頁";
-	}
-	if (count == 14){
-		document.getElementById('content').children[0].innerHTML = "[演講資訊] 5/20（五）科技翻轉世界 @4263";
-		document.getElementById('content').children[1].innerHTML = "主講人：華致資訊 營運長 陳志男先生";
-	}
-	if (count == 15){
-		document.getElementById('content').children[0].innerHTML = "[得獎資訊] 恭賀本系師生共同傑出的努力";
-		document.getElementById('content').children[1].innerHTML = "～～～太強啦～～～";
 	}
 }
