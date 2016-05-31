@@ -33,7 +33,7 @@ $.preload(images, 1, function(last){
 
 		//Preloading Out
     $('body').removeClass("loading");
-    var timeFlag = window.setInterval(animate , 1000); //animate Started
+    var timeFlag = window.setInterval(animate , 9000); //animate Started
 	}
   
   if (last){
