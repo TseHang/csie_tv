@@ -21,6 +21,8 @@ var images = [
   'images/11.jpg',
   'images/12.jpg',
   'images/13.jpg',
+  'images/14.jpg',
+  'images/15.jpg',
 ];
 
 $.preload(images, 1, function(last){
@@ -119,21 +121,32 @@ function animate() {
 	}
 	//
 	if (count == 10){
-		document.getElementById('content').children[0].innerHTML = "[演講資訊] 5/27（五） @4263";
-		document.getElementById('content').children[1].innerHTML = "Topic: New Systems Research Opportunities for Cloud-Scale Data Centers";
+		document.getElementById('content').children[0].innerHTML = "[狂賀] 本系男子排球隊勇獲105學年度系際盃冠軍";
+		document.getElementById('content').children[1].innerHTML = "ＯＰＯＰ 唯我獨尊！";
 	}
 	//
 	if (count == 11){
-		document.getElementById('content').children[0].innerHTML = "[演講資訊] 5/27（五） @4204";
-		document.getElementById('content').children[1].innerHTML = "主題：中醫脈診現代探討";
+		document.getElementById('content').children[0].innerHTML = "[狂賀] 本系男子排球隊勇獲105學年度系際盃冠軍";
+		document.getElementById('content').children[1].innerHTML = "超強的啦！！";
 	}
 	//
 	if (count == 12){
+		document.getElementById('content').children[0].innerHTML = "[狂賀] 本系男子排球隊勇獲105學年度系際盃季軍";
+		document.getElementById('content').children[1].innerHTML = "主任真幸福～";
+	}
+	//
+	if (count == 13){
+		document.getElementById('content').children[0].innerHTML = "[狂賀] 本系女子排球隊勇獲105學年度系際盃季軍";
+		document.getElementById('content').children[1].innerHTML = "ＯＭＧ！！！";
+	}
+
+	//
+	if (count == 14){
 		document.getElementById('content').children[0].innerHTML = "別從別人的嘴裡，去認識你自己";
 		document.getElementById('content').children[1].innerHTML = "圖片來源：毛叢叢 紛絲專頁";
 	}
 	//
-	if (count == 13){
+	if (count == 15){
 		document.getElementById('content').children[0].innerHTML = "大家讀書加油！ 期末考加油！";
 		document.getElementById('content').children[1].innerHTML = "圖片來源：毛叢叢紛絲專頁";
 	}
