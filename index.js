@@ -131,7 +131,7 @@ function animate() {
 	}
 	//
 	if (count == 12){
-		document.getElementById('content').children[0].innerHTML = "[狂賀] 本系男子排球隊勇獲105學年度系際盃季軍";
+		document.getElementById('content').children[0].innerHTML = "[狂賀] 本系女子排球隊勇獲105學年度系際盃季軍";
 		document.getElementById('content').children[1].innerHTML = "主任真幸福～";
 	}
 	//
