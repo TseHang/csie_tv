@@ -23,6 +23,7 @@ var images = [
   'images/13.jpg',
   'images/14.jpg',
   'images/15.jpg',
+  'images/16.jpg',
 ];
 
 $.preload(images, 1, function(last){
@@ -47,7 +48,7 @@ var count = 1 ;
 function animate() {
 	count++;
 	//console.log("111");
-	if ( count > 15 )
+	if ( count > 16 )
 		count = 1 ;
 
 	//'background-size':'cover',
@@ -101,23 +102,23 @@ function animate() {
 	}
 	//送舊
 	if (count == 6){
-		document.getElementById('content').children[0].innerHTML = "2016 送舊晚會 六月三日 @ 濃園滿漢餐廳";
-		document.getElementById('content').children[1].innerHTML = "等你來挑戰！！";
+		document.getElementById('content').children[0].innerHTML = "2016 送舊晚會 圓滿成功";
+		document.getElementById('content').children[1].innerHTML = "讓我們恭賀學長姐們順利畢業！！";
 	}
 	//小畢典
 	if (count == 7){
-		document.getElementById('content').children[0].innerHTML = "2016 資訊系畢業典禮 六月五日 @ 大格致廳";
-		document.getElementById('content').children[1].innerHTML = "祝賀 學長姐鵬程萬里 一帆風順！";
+		document.getElementById('content').children[0].innerHTML = "2016 資訊系畢業典禮 謝師禮";
+		document.getElementById('content').children[1].innerHTML = "祝賀 學長姐鵬程萬里 一帆風順！！";
 	}
 	//選舉系列
 	if (count == 8){
-		document.getElementById('content').children[0].innerHTML = "[恭賀] 第19屆系學會正副會長 張哲/許雁婷";
-		document.getElementById('content').children[1].innerHTML = "期許他們將來的一年可以攜手打造更美好的資訊系";
+		document.getElementById('content').children[0].innerHTML = "2016 資訊系畢業典禮 圓滿成功";
+		document.getElementById('content').children[1].innerHTML = "學長姐不要走～～～～";
 	}
 	//會長選舉
 	if (count == 9){
-		document.getElementById('content').children[0].innerHTML = "[恭賀] 同仁榮任行政院科技會報 執行秘書";
-		document.getElementById('content').children[1].innerHTML = "資訊系全體同仁恭賀～";
+		document.getElementById('content').children[0].innerHTML = "2016 資訊系畢業典禮 丟帽儀式";
+		document.getElementById('content').children[1].innerHTML = "太棒了～～～～";
 	}
 	//
 	if (count == 10){
@@ -149,5 +150,9 @@ function animate() {
 	if (count == 15){
 		document.getElementById('content').children[0].innerHTML = "大家讀書加油！ 期末考加油！";
 		document.getElementById('content').children[1].innerHTML = "圖片來源：毛叢叢紛絲專頁";
+	}
+	if (count == 16){
+		document.getElementById('content').children[0].innerHTML = "[恭賀] 第19th 系學會正副會長 張哲/許雁婷";
+		document.getElementById('content').children[1].innerHTML = "期許他們攜手打造更美好的資訊系";
 	}
 }
