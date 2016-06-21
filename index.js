@@ -24,6 +24,8 @@ var images = [
   'images/14.jpg',
   'images/15.jpg',
   'images/16.jpg',
+  'images/17.jpg',
+  'images/18.gif'
 ];
 
 $.preload(images, 1, function(last){
@@ -48,13 +50,21 @@ var count = 1 ;
 function animate() {
 	count++;
 	//console.log("111");
-	if ( count > 16 )
+	if ( count > 18 )
 		count = 1 ;
 
-	//'background-size':'cover',
-	$('#container').css({
-		'background-image':'url(\'images/'+count+'.jpg\')',
-	})
+	if (count == 18){
+		//'background-size':'cover',
+		$('#container').css({
+			'background-image':'url(\'images/'+count+'.gif\')',
+		})
+	}
+	else{
+		//'background-size':'cover',
+		$('#container').css({
+			'background-image':'url(\'images/'+count+'.jpg\')',
+		})
+	}
 	
 	//因為選舉 蓋到系會 會不清楚 所以調大小
 	
@@ -100,59 +110,68 @@ function animate() {
 		document.getElementById('content').children[0].innerHTML = "2016 資訊女籃 成大工院盃 亞軍";
 		document.getElementById('content').children[1].innerHTML = "恭賀 兼具力與美的美女們奪得亞軍！";
 	}
-	//送舊
 	if (count == 6){
-		document.getElementById('content').children[0].innerHTML = "2016 送舊晚會 圓滿成功";
-		document.getElementById('content').children[1].innerHTML = "讓我們恭賀學長姐們順利畢業！！";
-	}
-	//小畢典
-	if (count == 7){
-		document.getElementById('content').children[0].innerHTML = "2016 資訊系畢業典禮 謝師禮";
-		document.getElementById('content').children[1].innerHTML = "祝賀 學長姐鵬程萬里 一帆風順！！";
-	}
-	//選舉系列
-	if (count == 8){
-		document.getElementById('content').children[0].innerHTML = "2016 資訊系畢業典禮 圓滿成功";
-		document.getElementById('content').children[1].innerHTML = "學長姐不要走～～～～";
-	}
-	//會長選舉
-	if (count == 9){
-		document.getElementById('content').children[0].innerHTML = "2016 資訊系畢業典禮 丟帽儀式";
-		document.getElementById('content').children[1].innerHTML = "太棒了～～～～";
-	}
-	//
-	if (count == 10){
-		document.getElementById('content').children[0].innerHTML = "[賀] 本系男子排球隊勇獲105學年系際盃冠軍";
-		document.getElementById('content').children[1].innerHTML = "ＯＰＯＰ 唯我獨尊！";
-	}
-	//
-	if (count == 11){
 		document.getElementById('content').children[0].innerHTML = "[賀] 本系男子排球隊勇獲105學年系際盃冠軍";
 		document.getElementById('content').children[1].innerHTML = "超強的啦！！";
 	}
 	//
-	if (count == 12){
+	if (count == 7){
 		document.getElementById('content').children[0].innerHTML = "[賀] 本系女子排球隊勇獲105學年系際盃季軍";
 		document.getElementById('content').children[1].innerHTML = "主任真幸福～";
 	}
+	//送舊
+	if (count == 8){
+		document.getElementById('content').children[0].innerHTML = "2016 送舊晚會 圓滿成功";
+		document.getElementById('content').children[1].innerHTML = "讓我們恭賀學長姐們順利畢業！！";
+	}
+	//小畢典
+	if (count == 9){
+		document.getElementById('content').children[0].innerHTML = "2016 送舊晚會 歌王";
+		document.getElementById('content').children[1].innerHTML = "神啊，救救我吧！";
+	}
+	//選舉系列
+	if (count == 10){
+		document.getElementById('content').children[0].innerHTML = "2016 送舊晚會";
+		document.getElementById('content').children[1].innerHTML = "感謝辛苦工人們～";
+	}
+	//會長選舉
+	if (count == 11){
+		document.getElementById('content').children[0].innerHTML = "2016 資訊系畢業典禮 ";
+		document.getElementById('content').children[1].innerHTML = "";
+	}
+	//
+	if (count == 12){
+		document.getElementById('content').children[0].innerHTML = "2016 資訊系畢業典禮 謝師禮";
+		document.getElementById('content').children[1].innerHTML = "";
+	}
 	//
 	if (count == 13){
-		document.getElementById('content').children[0].innerHTML = "[賀] 本系女子排球隊勇獲105學年系際盃季軍";
-		document.getElementById('content').children[1].innerHTML = "ＯＭＧ！！！";
+		document.getElementById('content').children[0].innerHTML = "2016 資訊系畢業典禮 撥穗";
+		document.getElementById('content').children[1].innerHTML = "";
+	}
+	//
+	if (count == 14){
+		document.getElementById('content').children[0].innerHTML = "2016 資訊系畢業典禮 ";
+		document.getElementById('content').children[1].innerHTML = "";
+	}
+	//
+	if (count == 15){
+		document.getElementById('content').children[0].innerHTML = "2016 資訊系畢業典禮 丟帽儀式";
+		document.getElementById('content').children[1].innerHTML = "畢業，只是下一個旅程的開始";
 	}
 
 	//
-	if (count == 14){
+	if (count == 16){
 		document.getElementById('content').children[0].innerHTML = "別從別人的嘴裡，去認識你自己";
 		document.getElementById('content').children[1].innerHTML = "圖片來源：毛叢叢 紛絲專頁";
 	}
 	//
-	if (count == 15){
+	if (count == 17){
 		document.getElementById('content').children[0].innerHTML = "大家讀書加油！ 期末考加油！";
 		document.getElementById('content').children[1].innerHTML = "圖片來源：毛叢叢紛絲專頁";
 	}
-	if (count == 16){
-		document.getElementById('content').children[0].innerHTML = "[恭賀] 第19th 系學會正副會長 張哲/許雁婷";
-		document.getElementById('content').children[1].innerHTML = "期許他們攜手打造更美好的資訊系";
+	if (count == 18){
+		document.getElementById('content').children[0].innerHTML = "努力！我行的！";
+		document.getElementById('content').children[1].innerHTML = "GO!GO!";
 	}
 }
