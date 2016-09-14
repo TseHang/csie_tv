@@ -30,87 +30,102 @@ var images = [
 ];
 
 // 計算總共要讀取幾個
-var count = inputs.length ;
-var tmpCounter = 0 ;
+var count = inputs.length;
+var tmpCounter = 0;
 var timeFlag; // 控制換圖片的時間
-var timeInterval = 9000 ;
+var timeInterval = 9000;
 var video = document.getElementById("video");
 
-$.preload(images, 1, function(last){
+var vidoePlaying = false;
 
-	if ($(this)[0] == inputs[Math.round(count/2)].name ){
-		console.log('start!!');
+$.preload(images, 1, function(last) {
 
-		//Preloading Out
+  if ($(this)[0] == inputs[Math.round(count / 2)].name) {
+    // console.log('start!!');
+    //Preloading Out
     $('body').removeClass("loading");
-    timeFlag = window.setTimeout(next , timeInterval); //animate Started
-	}
-  
-  if (last){
-    console.log("All loaded");
+    timeFlag = window.setTimeout(next, timeInterval); //animate Started
+  }
+
+  if (last) {
+    console.log("Images All loaded");
   }
 });
 
+video.addEventListener("ended", function() {
+  // console.log("影片播完囉～");
+
+  $('#container').css("display", "block");
+
+  if (vidoePlaying == true) {
+    next();
+    vidoePlaying = false;
+  }
+});
+
+/*
+測試看看 loading over 沒
+
+video.addEventListener("canplaythrough", function() {
+  console.log("video loading over");
+});
+*/
+
 function next() {
-	// console.log(tmpCounter);
+  // console.log(tmpCounter);
 
-	// 判斷到底需不需要從頭讀
-	tmpCounter ++;
-	tmpCounter = (tmpCounter==count) ? 0 : tmpCounter ;
+  // 判斷到底需不需要從頭讀
+  tmpCounter++;
+  tmpCounter = (tmpCounter == count) ? 0 : tmpCounter;
 
-	// type: undefined --> Image
-	if(inputs[tmpCounter].type == undefined){
-		changeImage(tmpCounter);
-		changeFooter(tmpCounter);
+  // type: undefined --> Image
+  if (inputs[tmpCounter].type == undefined) {
+    changeImage(tmpCounter);
+    changeFooter(tmpCounter);
 
-		//9秒後換下一個 
-		timeFlag = window.setTimeout(next , timeInterval);
-	}
-	else if (inputs[tmpCounter].type == 'video'){
+    //9秒後換下一個 
+    timeFlag = window.setTimeout(next, timeInterval);
 
-		changeVideo(tmpCounter);
-	}
+  } else if (inputs[tmpCounter].type == 'video') {
+    changeVideo(tmpCounter);
+  }
 
-	// 換動畫
-	fade_direction = tmpCounter%4 ;
-	switch (fade_direction) {
-		case 0 :
-			$('#content').animo({animation: "fadeInDown", duration: 0.5});
-			break;
-		case 1 :
-			$('#content').animo({animation: "fadeInRight", duration: 0.5});
-			break;
-		case 2 :
-			$('#content').animo({animation: "fadeInLeft", duration: 0.5});
-			break;
-		case 3 :
-			$('#content').animo({animation: "fadeInUp", duration: 0.5});
-			break;
-	}
+  // 換動畫
+  fade_direction = tmpCounter % 4;
+  switch (fade_direction) {
+    case 0:
+      $('#content').animo({ animation: "fadeInDown", duration: 0.5 });
+      break;
+    case 1:
+      $('#content').animo({ animation: "fadeInRight", duration: 0.5 });
+      break;
+    case 2:
+      $('#content').animo({ animation: "fadeInLeft", duration: 0.5 });
+      break;
+    case 3:
+      $('#content').animo({ animation: "fadeInUp", duration: 0.5 });
+      break;
+  }
 }
 
-function changeImage(counter){
-	$('#container').css({
-		'background-image':'url('+ inputs[counter].name +')',
-	})
+function changeImage(counter) {
+  $('#container').css({
+    'background-image': 'url(' + inputs[counter].name + ')',
+  })
 }
 
-function changeVideo(counter){
-	
-	$('#container').css("display" , "none");
+function changeVideo(counter) {
 
-	// 播放影片，消掉圖片
-	video.src = inputs[counter].name ;
-	video.addEventListener("ended",function(){
-		console.log("影片播完囉～");
+  $('#container').css("display", "none");
 
-		$('#container').css("display" , "block");
-		next();
-	});
+  // 播放影片，消掉圖片
+  video.src = inputs[counter].name;
+  video.load();
+  video.play();
+  vidoePlaying = true;
 }
 
-function changeFooter(counter){
-		document.getElementById('content').children[0].innerHTML = inputs[counter].title;
-		document.getElementById('content').children[1].innerHTML = inputs[counter].subTitle;
+function changeFooter(counter) {
+  document.getElementById('content').children[0].innerHTML = inputs[counter].title;
+  document.getElementById('content').children[1].innerHTML = inputs[counter].subTitle;
 }
-
