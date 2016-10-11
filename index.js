@@ -34,9 +34,11 @@ var count = inputs.length;
 var tmpCounter = 0;
 var timeFlag; // 控制換圖片的時間
 var timeInterval = 1000;
-var video = document.getElementById("video");
-
 var vidoePlaying = false;
+var OBJ_video = {
+  "csie":document.getElementById("video_csie"),
+  "test":document.getElementById("video_test")
+};
 
 $.preload(images, 1, function(last) {
 
@@ -44,28 +46,26 @@ $.preload(images, 1, function(last) {
     //Preloading Out
     $('body').removeClass("loading");
     timeFlag = window.setTimeout(next, timeInterval); //animate Started
-    video.load();
-    console.log("11");
   }
 
   if (last) {
     console.log("Images All loaded");
+
+    // 載入影片、增加ended事件
+    $.each(OBJ_video, function(index, video) {
+      video.load();
+      video.addEventListener("ended", function() {
+        $('#container').css("display", "block");
+        this.style.zIndex = -1 ;
+        if (vidoePlaying == true) {
+          vidoePlaying = false;
+          next();
+        }
+      });
+      console.log(video.id + " load over!");
+    });    
   }
-});
-
-video.addEventListener("ended", function() {
-  // console.log("影片播完囉～");
-
-  $('#container').css("display", "block");
-  console.log('video ended');
-
-  if (vidoePlaying == true) {
-    next();
-    vidoePlaying = false;
-    console.log('vidoePlaying = false');
-  }
-});
-
+}); 
 
 // 測試看看 loading over 沒
 
@@ -75,8 +75,6 @@ video.addEventListener("ended", function() {
 
 
 function next() {
-  // console.log(tmpCounter);
-
   // 判斷到底需不需要從頭讀
   tmpCounter++;
   tmpCounter = (tmpCounter == count) ? 0 : tmpCounter;
@@ -90,7 +88,7 @@ function next() {
     timeFlag = window.setTimeout(next, timeInterval);
 
   } else if (inputs[tmpCounter].type === 'video') {
-    changeVideo(tmpCounter);
+    changeVideo( tmpCounter , inputs[tmpCounter].source);
   }
 
   // 換動畫
@@ -117,14 +115,12 @@ function changeImage(counter) {
   })
 }
 
-function changeVideo(counter) {
+function changeVideo(counter,video) {
 
   $('#container').css("display", "none");
-
-  // 播放影片，消掉圖片
-  video.src = inputs[counter].name;
+  video.style.zIndex = 1 ;
   video.currentTime = 0 ;
-  video.play();
+  video.play();  // Chrome 的 play 包含 load
   vidoePlaying = true;
 }
 

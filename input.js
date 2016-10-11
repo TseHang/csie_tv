@@ -78,6 +78,9 @@ var inputs = [
 		subTitle: "指導研究團隊榮獲「第十六屆旺宏金矽獎半導體設計與應用大賽」應用組－銅獎!"
 	},{
 		type: 'video',
-		name: 'video/成大資工系.mp4'
+		source: document.getElementById("video_csie")
+	},{
+		type: 'video',
+		source: document.getElementById("video_test")
 	}
 ]
