@@ -79,8 +79,5 @@ var inputs = [
 	},{
 		type: 'video',
 		source: document.getElementById("video_csie")
-	},{
-		type: 'video',
-		source: document.getElementById("video_test")
 	}
 ]

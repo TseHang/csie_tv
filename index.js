@@ -34,10 +34,9 @@
   var timeFlag; // 控制換圖片的時間
   var timeInterval = 1000;
   var vidoePlaying = false;
-  
+
   var OBJ_video = {
-    "csie":document.getElementById("video_csie"),
-    "test":document.getElementById("video_test")
+    "csie":document.getElementById("video_csie")
   };
 
   // Loading
