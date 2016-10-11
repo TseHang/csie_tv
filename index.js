@@ -32,7 +32,7 @@
   var count = inputs.length;
   var tmpCounter = 0;
   var timeFlag; // 控制換圖片的時間
-  var timeInterval = 1000;
+  var timeInterval = 9000;
   var vidoePlaying = false;
 
   var OBJ_video = {
