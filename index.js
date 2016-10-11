@@ -33,7 +33,7 @@ var images = [
 var count = inputs.length;
 var tmpCounter = 0;
 var timeFlag; // 控制換圖片的時間
-var timeInterval = 9000;
+var timeInterval = 1000;
 var video = document.getElementById("video");
 
 var vidoePlaying = false;
@@ -41,10 +41,11 @@ var vidoePlaying = false;
 $.preload(images, 1, function(last) {
 
   if ($(this)[0] == inputs[Math.round(count / 2)].name) {
-    // console.log('start!!');
     //Preloading Out
     $('body').removeClass("loading");
     timeFlag = window.setTimeout(next, timeInterval); //animate Started
+    video.load();
+    console.log("11");
   }
 
   if (last) {
@@ -56,20 +57,22 @@ video.addEventListener("ended", function() {
   // console.log("影片播完囉～");
 
   $('#container').css("display", "block");
+  console.log('video ended');
 
   if (vidoePlaying == true) {
     next();
     vidoePlaying = false;
+    console.log('vidoePlaying = false');
   }
 });
 
-/*
-測試看看 loading over 沒
 
-video.addEventListener("canplaythrough", function() {
-  console.log("video loading over");
-});
-*/
+// 測試看看 loading over 沒
+
+// video.addEventListener("canplaythrough", function() {
+//   console.log("video loading over");
+// });
+
 
 function next() {
   // console.log(tmpCounter);
@@ -79,14 +82,14 @@ function next() {
   tmpCounter = (tmpCounter == count) ? 0 : tmpCounter;
 
   // type: undefined --> Image
-  if (inputs[tmpCounter].type == undefined) {
+  if (inputs[tmpCounter].type === undefined) {
     changeImage(tmpCounter);
     changeFooter(tmpCounter);
 
     //9秒後換下一個 
     timeFlag = window.setTimeout(next, timeInterval);
 
-  } else if (inputs[tmpCounter].type == 'video') {
+  } else if (inputs[tmpCounter].type === 'video') {
     changeVideo(tmpCounter);
   }
 
@@ -120,7 +123,7 @@ function changeVideo(counter) {
 
   // 播放影片，消掉圖片
   video.src = inputs[counter].name;
-  video.load();
+  video.currentTime = 0 ;
   video.play();
   vidoePlaying = true;
 }
