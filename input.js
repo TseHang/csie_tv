@@ -5,6 +5,10 @@ var inputs = [
 		title: "恭賀! 本系 莊坤達 老師！" ,
 		subTitle: "榮獲 105學年度校優良教師！！"
 	},{
+		name: 'images/competition.jpg',
+		title: "掌蚊人環境回報比賽開跑囉" ,
+		subTitle: "雨後找積水，iphone 任你選"
+	},{
 		name: 'images/2.jpg',
 		title: "資訊女排，熱血拿牌" ,
 		subTitle: "2016 春季成功盃冠軍 用生命在打排球！！"
