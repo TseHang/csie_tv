@@ -5,10 +5,6 @@ var inputs = [
 		title: "恭賀! 本系 莊坤達 老師！" ,
 		subTitle: "榮獲 105學年度校優良教師！！"
 	},{
-		name: 'images/competition.jpg',
-		title: "掌蚊人環境回報比賽開跑囉" ,
-		subTitle: "雨後找積水，iphone 任你選"
-	},{
 		name: 'images/2.jpg',
 		title: "資訊女排，熱血拿牌" ,
 		subTitle: "2016 春季成功盃冠軍 用生命在打排球！！"
@@ -21,9 +17,13 @@ var inputs = [
 		title: "2015 南資盃 壘球團體賽 殿軍" ,
 		subTitle: "[系棒] 練球時間：每週三、五 15:00~18:00 自強球場"
 	},{
-		name: 'images/5.jpg',
-		title: "2016 資訊女籃 成大工院盃 亞軍" ,
-		subTitle: "恭賀 兼具力與美的美女們奪得亞軍！"
+		name: 'images/csie_girl_baseketball.jpg',
+		title: "2016 資訊女籃 系際盃 冠軍！" ,
+		subTitle: "恭賀 美女們奪得冠軍！！"
+	},{
+		name: 'images/mvp.jpg',
+		title: "2016 資訊女籃 全場MVP！" ,
+		subTitle: "超強的啦！！！！"
 	},{
 		name: 'images/6.jpg',
 		title: "[賀] 本系男子排球隊勇獲105學年系際盃冠軍" ,
