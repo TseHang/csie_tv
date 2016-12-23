@@ -5,10 +5,6 @@ var inputs = [
 		title: "恭賀! 本系 莊坤達 老師！" ,
 		subTitle: "榮獲 105學年度校優良教師！！"
 	},{
-		name: 'images/sharing-12-26.jpg',
-		title: "前進矽谷-矽谷工程師經驗談" ,
-		subTitle: "12/26 19:00 - 21:00 蔡東邦先生"
-	},{
 		name: 'images/2.jpg',
 		title: "資訊女排，熱血拿牌" ,
 		subTitle: "2016 春季成功盃冠軍 用生命在打排球！！"
@@ -67,17 +63,5 @@ var inputs = [
 	},{
 		type: 'video',
 		source: document.getElementById("video_csie")
-	},{
-		name: 'images/a.jpeg',
-		title: "全體同仁同賀" ,
-		subTitle: ""
-	},{
-		name: 'images/b.jpeg',
-		title: "全體同仁同賀" ,
-		subTitle: ""
-	},{
-		name: 'images/c.jpeg',
-		title: "全體同仁同賀" ,
-		subTitle: ""
 	}
 ]
