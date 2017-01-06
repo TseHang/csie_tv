@@ -10,12 +10,13 @@
   var count = inputs.length;
   var tmpCounter = 0;
   var timeFlag; // 控制換圖片的時間
-  var timeInterval = 9000;
+  var timeInterval = 10000;
   var vidoePlaying = false;
 
   var images =[];
   var OBJ_video = {
-    "csie":document.getElementById("video_csie")
+    // "csie":document.getElementById("video_csie")
+    "tree":document.getElementById("video_tree")
   };
 
   // Loading
@@ -26,10 +27,9 @@
     if(value.type === undefined)
       images.push(value.name);
   })
-
+  
   $.preload(images, 1, function(last) {
-
-    if ($(this)[0] == inputs[Math.round(count / 2)].name) {
+    if ($(this)[0] === inputs[Math.round(count/2 - 1)].name) {
       //Preloading Out
       $('body').removeClass("loading");
       timeFlag = window.setTimeout(next, timeInterval); //animate Started
