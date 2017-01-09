@@ -15,8 +15,8 @@
 
   var images =[];
   var OBJ_video = {
-    // "csie":document.getElementById("video_csie")
-    "tree":document.getElementById("video_tree")
+    "csie":document.getElementById("video_csie")
+    // "tree":document.getElementById("video_tree")
   };
 
   // Loading
