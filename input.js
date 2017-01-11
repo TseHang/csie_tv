@@ -1,91 +1,91 @@
 // input.js
 var inputs = [
 	{
-		name: 'images/106_presentation/1.jpg',
+		name: 'images/106_presentation/1.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "連所長帥！"
 	},{
-		name: 'images/106_presentation/2.jpg',
+		name: 'images/106_presentation/2.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "系主任帥！"
 	},{
-		name: 'images/106_presentation/3.jpg',
+		name: 'images/106_presentation/3.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "~ wow ~"
 	},{
-		name: 'images/106_presentation/4.jpg',
+		name: 'images/106_presentation/4.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "爆猛籃球機"
 	},{
-		name: 'images/106_presentation/5.jpg',
+		name: 'images/106_presentation/5.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "大三微算機專題，超猛der "
 	},{
-		name: 'images/106_presentation/6.jpg',
+		name: 'images/106_presentation/6.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "大三微算機專題，超猛der "
 	},{
-		name: 'images/106_presentation/7.jpg',
+		name: 'images/106_presentation/7.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "大三微算機專題，超猛der "
 	},{
-		name: 'images/106_presentation/8.jpg',
+		name: 'images/106_presentation/8.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "大三微算機專題，超猛der "
 	},{
-		name: 'images/106_presentation/9.jpg',
+		name: 'images/106_presentation/9.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "老師評分中... > <"
 	},{
-		name: 'images/106_presentation/10.jpg',
+		name: 'images/106_presentation/10.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "高中生們也來囉～"
 	},{
-		name: 'images/106_presentation/11.jpg',
+		name: 'images/106_presentation/11.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "大三微算機專題，超猛der "
 	},{
-		name: 'images/106_presentation/12.jpg',
+		name: 'images/106_presentation/12.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "緊張的presentation！"
 	},{
-		name: 'images/106_presentation/13.jpg',
+		name: 'images/106_presentation/13.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "緊張的presentation！"
 	},{
-		name: 'images/106_presentation/14.jpg',
+		name: 'images/106_presentation/14.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "哼！"
 	},{
-		name: 'images/106_presentation/15.jpg',
+		name: 'images/106_presentation/15.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "感謝美麗姊姊工作人員"
 	},{
-		name: 'images/106_presentation/16.jpg',
+		name: 'images/106_presentation/16.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "第一名"
 	},{
-		name: 'images/106_presentation/17.jpg',
+		name: 'images/106_presentation/17.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "佳作"
 	},{
-		name: 'images/106_presentation/18.jpg',
+		name: 'images/106_presentation/18.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "佳作"
 	},{
-		name: 'images/106_presentation/19.jpg',
+		name: 'images/106_presentation/19.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "佳作"
 	},{
-		name: 'images/106_presentation/20.jpg',
+		name: 'images/106_presentation/20.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "緊張！刺激！"
 	},{
-		name: 'images/106_presentation/21.jpg',
+		name: 'images/106_presentation/21.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "黑白棋天才"
 	},{
-		name: 'images/106_presentation/22.jpg',
+		name: 'images/106_presentation/22.JPG',
 		title: "106級 畢業專題展" ,
 		subTitle: "帥"
 	},{
