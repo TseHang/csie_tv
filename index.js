@@ -10,7 +10,7 @@
   var count = inputs.length;
   var tmpCounter = 0;
   var timeFlag; // 控制換圖片的時間
-  var timeInterval = 10000;
+  var timeInterval = 5000;//10000;
   var vidoePlaying = false;
 
   var images =[];

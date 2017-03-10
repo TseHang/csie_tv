@@ -1,109 +1,37 @@
 // input.js
 var inputs = [
 	{
-		name: 'images/106_presentation/1.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "連所長帥！"
+		name: "images/waste.jpg",
+		title: "堅持能讓你在逆境中依舊挺立、發揮潛力",
+		subTitle: "圖片、文字來源：《幾米S.P.A.》紛絲專頁"
 	},{
-		name: 'images/106_presentation/2.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "系主任帥！"
+		name: "images/gogogo.jpg",
+		title: "世間有兩種悲劇，一是想要的得不到，一是心想事成。",
+		subTitle: "圖片來源：《幾米S.P.A.》紛絲專頁"
 	},{
-		name: 'images/106_presentation/3.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "~ wow ~"
-	},{
-		name: 'images/106_presentation/4.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "爆猛籃球機"
-	},{
-		name: 'images/106_presentation/5.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "大三微算機專題，超猛der "
-	},{
-		name: 'images/106_presentation/6.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "大三微算機專題，超猛der "
-	},{
-		name: 'images/106_presentation/7.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "大三微算機專題，超猛der "
-	},{
-		name: 'images/106_presentation/8.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "大三微算機專題，超猛der "
-	},{
-		name: 'images/106_presentation/9.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "老師評分中... > <"
-	},{
-		name: 'images/106_presentation/10.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "高中生們也來囉～"
-	},{
-		name: 'images/106_presentation/11.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "大三微算機專題，超猛der "
-	},{
-		name: 'images/106_presentation/12.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "緊張的presentation！"
-	},{
-		name: 'images/106_presentation/13.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "緊張的presentation！"
-	},{
-		name: 'images/106_presentation/14.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "哼！"
-	},{
-		name: 'images/106_presentation/15.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "感謝美麗姊姊工作人員"
-	},{
-		name: 'images/106_presentation/16.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "第一名"
-	},{
-		name: 'images/106_presentation/17.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "佳作"
-	},{
-		name: 'images/106_presentation/18.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "佳作"
-	},{
-		name: 'images/106_presentation/19.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "佳作"
-	},{
-		name: 'images/106_presentation/20.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "緊張！刺激！"
-	},{
-		name: 'images/106_presentation/21.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "黑白棋天才"
-	},{
-		name: 'images/106_presentation/22.JPG',
-		title: "106級 畢業專題展" ,
-		subTitle: "帥"
-	},{
-		name: 'images/16.jpg',
-		title: "別從別人的嘴裡，去認識你自己" ,
-		subTitle: "圖片來源：毛叢叢 紛絲專頁"
-	},{
-		name: 'images/miss.jpeg',
-		title: "只有在嚐過之後，才能在回憶時甜美" ,
-		subTitle: "圖片來源：毛叢叢 紛絲專頁"
-	},{
-		name: 'images/textAvy.jpeg',
-		title: "" ,
-		subTitle: "文字來源：故事貿易公司"
+		name: "images/prince.jpg",
+		title: "有些時候，把工作延後並不會有什麼傷害",
+		subTitle: "文字、圖片來源：《小王子》"
 	},{
 		name: 'images/18.gif',
 		title: "努力！我行的！衝一波吧！" ,
 		subTitle: "GO!GO!"
+	},{
+		name: 'images/gogo.png',
+		title: "寬鬆世代又怎樣",
+		subTitle: "文字來源：宮藤官九郎《寬鬆世代又怎樣》"
+	},{
+		name: "images/16_software.jpg",
+		title: "agile iterative waterfall spiral 我該用哪個？",
+		subTitle: "圖片來源：《好色龍》紛絲專頁"
+	},{
+		name: "images/life.png",
+		title: "",
+		subTitle: "文字來源：《踮腳張望的時光》"
+	},{
+		name: "images/young.png",
+		title: "",
+		subTitle: "文字來源：《七里香》"
 	}
 ]
 // var inputs = [
