@@ -1,39 +1,244 @@
-// input.js
+//input.js
+
 var inputs = [
 	{
-		name: "images/waste.jpg",
-		title: "堅持能讓你在逆境中依舊挺立、發揮潛力",
-		subTitle: "圖片、文字來源：《幾米S.P.A.》紛絲專頁"
+		name: "images/[2017.04.08]Interview/1.jpg",
+		title: "大學團體面試",
+		subTitle: ""
 	},{
-		name: "images/gogogo.jpg",
-		title: "世間有兩種悲劇，一是想要的得不到，一是心想事成。",
-		subTitle: "圖片來源：《幾米S.P.A.》紛絲專頁"
+		name: "images/[2017.04.08]Interview/2.jpg",
+		title: "大學團體面試",
+		subTitle: ""
 	},{
-		name: "images/prince.jpg",
-		title: "有些時候，把工作延後並不會有什麼傷害",
-		subTitle: "文字、圖片來源：《小王子》"
+		name: "images/[2017.04.08]Interview/3.jpg",
+		title: "大學團體面試",
+		subTitle: ""
 	},{
-		name: 'images/18.gif',
-		title: "努力！我行的！衝一波吧！" ,
-		subTitle: "GO!GO!"
+		name: "images/[2017.04.08]Interview/4.jpg",
+		title: "大學團體面試",
+		subTitle: ""
 	},{
-		name: 'images/gogo.png',
-		title: "寬鬆世代又怎樣",
-		subTitle: "文字來源：宮藤官九郎《寬鬆世代又怎樣》"
+		name: "images/[2017.04.08]Interview/5.jpg",
+		title: "大學團體面試",
+		subTitle: ""
 	},{
-		name: "images/16_software.jpg",
-		title: "agile iterative waterfall spiral 我該用哪個？",
-		subTitle: "圖片來源：《好色龍》紛絲專頁"
+		name: "images/[2017.04.08]Interview/6.jpg",
+		title: "大學團體面試",
+		subTitle: ""
 	},{
-		name: "images/life.png",
-		title: "",
-		subTitle: "文字來源：《踮腳張望的時光》"
+		name: "images/[2017.04.08]Interview/7.jpg",
+		title: "大學團體面試",
+		subTitle: ""
 	},{
-		name: "images/young.png",
-		title: "",
-		subTitle: "文字來源：《七里香》"
+		name: "images/[2017.04.08]Interview/8.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/9.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/10.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/11.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/12.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/13.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/14.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/15.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/16.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/17.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/18.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/19.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/20.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/21.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/22.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/23.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/24.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/25.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/26.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/27.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/28.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/29.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/30.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/31.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/32.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/33.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/34.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/35.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/36.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/37.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/38.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/39.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/40.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/41.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/42.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/43.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/44.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/45.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/46.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/47.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/48.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/49.jpg",
+		title: "大學團體面試",
+		subTitle: ""
+	},{
+		name: "images/[2017.04.08]Interview/50.jpg",
+		title: "大學團體面試",
+		subTitle: ""
 	}
 ]
+
+//var inputs = [
+//	{
+//		name: "images/waste.jpg",
+//		title: "堅持能讓你在逆境中依舊挺立、發揮潛力",
+//		subTitle: "圖片、文字來源：《幾米S.P.A.》紛絲專頁"
+//	},{
+//		name: "images/gogogo.jpg",
+//		title: "世間有兩種悲劇，一是想要的得不到，一是心想事成。",
+//		subTitle: "圖片來源：《幾米S.P.A.》紛絲專頁"
+//	},{
+//		name: "images/prince.jpg",
+//		title: "有些時候，把工作延後並不會有什麼傷害",
+//		subTitle: "文字、圖片來源：《小王子》"
+//	},{
+//		name: 'images/18.gif',
+//		title: "努力！我行的！衝一波吧！" ,
+//		subTitle: "GO!GO!"
+//	},{
+//		name: 'images/gogo.png',
+//		title: "寬鬆世代又怎樣",
+//		subTitle: "文字來源：宮藤官九郎《寬鬆世代又怎樣》"
+//	},{
+//		name: "images/16_software.jpg",
+//		title: "agile iterative waterfall spiral 我該用哪個？",
+//		subTitle: "圖片來源：《好色龍》紛絲專頁"
+//	},{
+//		name: "images/life.png",
+//		title: "",
+//		subTitle: "文字來源：《踮腳張望的時光》"
+//	},{
+//		name: "images/young.png",
+//		title: "",
+//		subTitle: "文字來源：《七里香》"
+//	}
+//]
 // var inputs = [
 // 	{
 // 		name: 'images/teacher.jpeg',
