@@ -18,43 +18,7 @@ var inputs = [
 		title: "大學團體面試",
 		subTitle: ""
 	},{
-		name: "images/[2017.04.08]Interview/5.jpg",
-		title: "大學團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/6.jpg",
-		title: "大學團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/7.jpg",
-		title: "大學團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/8.jpg",
-		title: "大學團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/9.jpg",
-		title: "大學團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/10.jpg",
-		title: "大學團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/11.jpg",
-		title: "大學團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/12.jpg",
-		title: "大學團體面試",
-		subTitle: ""
-	},{
 		name: "images/[2017.04.08]Interview/13.jpg",
-		title: "大學團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/14.jpg",
 		title: "大學團體面試",
 		subTitle: ""
 	},{
@@ -159,22 +123,6 @@ var inputs = [
 		subTitle: ""
 	},{
 		name: "images/[2017.04.08]Interview/40.jpg",
-		title: "大學團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/41.jpg",
-		title: "大學團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/42.jpg",
-		title: "大學團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/43.jpg",
-		title: "大學團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/44.jpg",
 		title: "大學團體面試",
 		subTitle: ""
 	},{
