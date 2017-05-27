@@ -1,156 +1,227 @@
 //input.js
-
 var inputs = [
 	{
-		name: "images/[2017.04.08]Interview/1.jpg",
-		title: "大學推甄團體面試",
+		name: "images/[2017.05.27]volleyball/1.jpg",
+		title: "資工系 勇奪成大系際盃女排冠軍",
 		subTitle: ""
 	},{
-		name: "images/[2017.04.08]Interview/2.jpg",
-		title: "大學推甄團體面試",
+		name: "images/[2017.05.27]volleyball/2.jpg",
+		title: "資工系 勇奪成大系際盃女排冠軍",
 		subTitle: ""
 	},{
-		name: "images/[2017.04.08]Interview/3.jpg",
-		title: "大學推甄團體面試",
+		name: "images/[2017.05.27]volleyball/3.jpg",
+		title: "資工系 勇奪成大系際盃女排冠軍",
 		subTitle: ""
 	},{
-		name: "images/[2017.04.08]Interview/4.jpg",
-		title: "大學推甄團體面試",
+		name: "images/[2017.05.27]volleyball/4.jpg",
+		title: "資工系 勇奪成大系際盃女排冠軍",
 		subTitle: ""
 	},{
-		name: "images/[2017.04.08]Interview/13.jpg",
-		title: "大學推甄團體面試",
+		name: "images/[2017.05.27]volleyball/5.jpg",
+		title: "資工系 勇奪成大系際盃女排冠軍",
 		subTitle: ""
 	},{
-		name: "images/[2017.04.08]Interview/15.jpg",
-		title: "大學推甄團體面試",
+		name: "images/[2017.05.27]volleyball/6.jpg",
+		title: "資工系 勇奪成大系際盃女排冠軍",
 		subTitle: ""
 	},{
-		name: "images/[2017.04.08]Interview/16.jpg",
-		title: "大學推甄團體面試",
+		name: "images/[2017.05.27]volleyball/7.jpg",
+		title: "資工系 勇奪成大系際盃女排冠軍",
 		subTitle: ""
 	},{
-		name: "images/[2017.04.08]Interview/17.jpg",
-		title: "大學推甄團體面試",
+		name: "images/[2017.05.27]volleyball/8.jpg",
+		title: "資工系 勇奪成大系際盃女排冠軍",
 		subTitle: ""
 	},{
-		name: "images/[2017.04.08]Interview/18.jpg",
-		title: "大學推甄團體面試",
+		name: "images/[2017.05.27]volleyball/9.jpg",
+		title: "資工系 勇奪成大系際盃女排冠軍",
 		subTitle: ""
 	},{
-		name: "images/[2017.04.08]Interview/19.jpg",
-		title: "大學推甄團體面試",
+		name: "images/[2017.05.27]volleyball/10.jpg",
+		title: "資工系 勇奪成大系際盃女排冠軍",
 		subTitle: ""
 	},{
-		name: "images/[2017.04.08]Interview/20.jpg",
-		title: "大學推甄團體面試",
+		name: "images/[2017.05.27]volleyball/11.jpg",
+		title: "資工系 勇奪成大系際盃女排冠軍",
 		subTitle: ""
 	},{
-		name: "images/[2017.04.08]Interview/21.jpg",
-		title: "大學推甄團體面試",
+		name: "images/[2017.05.27]volleyball/12.jpg",
+		title: "資工系 勇奪成大系際盃女排冠軍",
 		subTitle: ""
 	},{
-		name: "images/[2017.04.08]Interview/22.jpg",
-		title: "大學推甄團體面試",
+		name: "images/[2017.05.27]volleyball/13.jpg",
+		title: "資工系 勇奪成大系際盃女排冠軍",
 		subTitle: ""
 	},{
-		name: "images/[2017.04.08]Interview/23.jpg",
-		title: "大學推甄團體面試",
+		name: "images/[2017.05.27]volleyball/14.jpg",
+		title: "資工系 勇奪成大系際盃女排冠軍",
 		subTitle: ""
 	},{
-		name: "images/[2017.04.08]Interview/24.jpg",
-		title: "大學推甄團體面試",
+		name: "images/[2017.05.27]volleyball/15.jpg",
+		title: "資工系 勇奪成大系際盃女排冠軍",
 		subTitle: ""
 	},{
-		name: "images/[2017.04.08]Interview/25.jpg",
-		title: "大學推甄團體面試",
+		name: "images/[2017.05.27]volleyball/16.jpg",
+		title: "資工系 勇奪成大系際盃女排冠軍",
 		subTitle: ""
 	},{
-		name: "images/[2017.04.08]Interview/26.jpg",
-		title: "大學推甄團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/27.jpg",
-		title: "大學推甄團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/28.jpg",
-		title: "大學推甄團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/29.jpg",
-		title: "大學推甄團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/30.jpg",
-		title: "大學推甄團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/31.jpg",
-		title: "大學推甄團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/32.jpg",
-		title: "大學推甄團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/33.jpg",
-		title: "大學推甄團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/34.jpg",
-		title: "大學推甄團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/35.jpg",
-		title: "大學推甄團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/36.jpg",
-		title: "大學推甄團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/37.jpg",
-		title: "大學推甄團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/38.jpg",
-		title: "大學推甄團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/39.jpg",
-		title: "大學推甄團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/40.jpg",
-		title: "大學推甄團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/45.jpg",
-		title: "大學推甄團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/46.jpg",
-		title: "大學推甄團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/47.jpg",
-		title: "大學推甄團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/48.jpg",
-		title: "大學推甄團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/49.jpg",
-		title: "大學推甄團體面試",
-		subTitle: ""
-	},{
-		name: "images/[2017.04.08]Interview/50.jpg",
-		title: "大學推甄團體面試",
+		name: "images/[2017.05.27]volleyball/17.jpg",
+		title: "資工系 勇奪成大系際盃女排冠軍",
 		subTitle: ""
 	}
 ]
+
+//var inputs = [
+//	{
+//		name: "images/[2017.04.08]Interview/1.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/2.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/3.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/4.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/13.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/15.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/16.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/17.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/18.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/19.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/20.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/21.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/22.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/23.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/24.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/25.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/26.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/27.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/28.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/29.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/30.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/31.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/32.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/33.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/34.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/35.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/36.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/37.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/38.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/39.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/40.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/45.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/46.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/47.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/48.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/49.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	},{
+//		name: "images/[2017.04.08]Interview/50.jpg",
+//		title: "大學推甄團體面試",
+//		subTitle: ""
+//	}
+//]
 
 //var inputs = [
 //	{
