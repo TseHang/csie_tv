@@ -484,10 +484,6 @@ var inputs = [
 		name: "images/[2017.06.03]CSIE_sotsugyoshiki/CSIE_0120.jpg",
 		title: "資工系畢業典禮",
 		subTitle: ""
-	},{
-		name: "images/[2017.06.03]CSIE_sotsugyoshiki/CSIE_0121.jpg",
-		title: "資工系畢業典禮",
-		subTitle: ""
 	}
 ]
 
