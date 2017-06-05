@@ -10,7 +10,7 @@
   var count = inputs.length;
   var tmpCounter = 0;
   var timeFlag; // 控制換圖片的時間
-  var timeInterval = 5000;//10000;
+  var timeInterval = 1800;//10000;
   var vidoePlaying = false;
 
   var images =[];
@@ -27,7 +27,7 @@
     if(value.type === undefined)
       images.push(value.name);
   })
-  
+
   $.preload(images, 1, function(last) {
     if ($(this)[0] === inputs[Math.round(count/2 - 1)].name) {
       //Preloading Out
@@ -50,9 +50,9 @@
           }
         });
         console.log(video.id + " load over!");
-      });    
+      });
     }
-  }); 
+  });
 
   // 測試看看 loading over 沒
 
@@ -71,7 +71,7 @@
       changeImage(tmpCounter);
       changeFooter(tmpCounter);
 
-      //9秒後換下一個 
+      //9秒後換下一個
       timeFlag = window.setTimeout(next, timeInterval);
 
     } else if (inputs[tmpCounter].type === 'video') {
