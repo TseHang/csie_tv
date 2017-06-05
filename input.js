@@ -1,7 +1,7 @@
 //input.js
 var inputs = [
 	{
-		name: "images/[2017.06.03]CSIE_sotsugyoshiki/CSIE_0000.jpg",
+		name: "images/[2017.06.03]CSIE_sotsugyoshiki/CSIE_0121.jpg",
 		title: "資工系畢業典禮",
 		subTitle: ""
 	},{
